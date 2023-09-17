@@ -91,6 +91,7 @@
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(39, 31);
             this.removeBtn.TabIndex = 0;
+            this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
             // containerControl
             // 
