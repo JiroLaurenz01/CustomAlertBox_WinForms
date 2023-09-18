@@ -32,12 +32,12 @@
             this.labelMessage = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.noticeLabel = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.removeBtn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.containerControl = new Guna.UI2.WinForms.Guna2ContainerControl();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.containerControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelMessage
@@ -58,16 +58,6 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ALERT_BOX.Properties.Resources.informationLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // noticeLabel
             // 
@@ -106,6 +96,16 @@
             this.containerControl.TabIndex = 4;
             this.containerControl.Text = "guna2ContainerControl1";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ALERT_BOX.Properties.Resources.informationLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // AlertForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -121,9 +121,9 @@
             this.ShowInTaskbar = false;
             this.Text = "Form_Alert";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.containerControl.ResumeLayout(false);
             this.containerControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,12 +132,12 @@
         #endregion
 
         private System.Windows.Forms.Label labelMessage;
-        private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Timer timer;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ContainerControl containerControl;
         private Guna.UI2.WinForms.Guna2HtmlLabel noticeLabel;
         private Guna.UI2.WinForms.Guna2ControlBox removeBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
