@@ -67,7 +67,7 @@
             this.guna2ContainerControl1.Controls.Add(this.guna2ControlBox1);
             this.guna2ContainerControl1.Controls.Add(this.removeBtn);
             this.guna2ContainerControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2ContainerControl1.FillColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContainerControl1.FillColor = System.Drawing.Color.DimGray;
             this.guna2ContainerControl1.Location = new System.Drawing.Point(0, 0);
             this.guna2ContainerControl1.Name = "guna2ContainerControl1";
             this.guna2ContainerControl1.Size = new System.Drawing.Size(595, 31);
@@ -79,7 +79,7 @@
             this.removeBtn.BackColor = System.Drawing.Color.Transparent;
             this.removeBtn.Dock = System.Windows.Forms.DockStyle.Right;
             this.removeBtn.FillColor = System.Drawing.Color.Transparent;
-            this.removeBtn.IconColor = System.Drawing.Color.DimGray;
+            this.removeBtn.IconColor = System.Drawing.Color.White;
             this.removeBtn.Location = new System.Drawing.Point(556, 0);
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(39, 31);
@@ -91,7 +91,7 @@
             this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox1.Location = new System.Drawing.Point(517, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(39, 31);
@@ -110,6 +110,7 @@
             // 
             // guna2Button1
             // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderRadius = 6;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -131,7 +132,7 @@
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(172)))), ((int)(((byte)(36)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(201)))), ((int)(((byte)(112)))));
             this.guna2Button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(58, 3);
@@ -174,9 +175,12 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(118)))), ((int)(((byte)(236)))));
+            this.guna2Panel1.BorderRadius = 6;
+            this.guna2Panel1.BorderThickness = 2;
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Location = new System.Drawing.Point(13, 108);
+            this.guna2Panel1.Location = new System.Drawing.Point(13, 104);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(275, 53);
             this.guna2Panel1.TabIndex = 6;
@@ -193,9 +197,12 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2Panel2.BorderRadius = 6;
+            this.guna2Panel2.BorderThickness = 2;
             this.guna2Panel2.Controls.Add(this.pictureBox2);
             this.guna2Panel2.Controls.Add(this.guna2Button3);
-            this.guna2Panel2.Location = new System.Drawing.Point(13, 167);
+            this.guna2Panel2.Location = new System.Drawing.Point(13, 163);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(275, 53);
             this.guna2Panel2.TabIndex = 7;
@@ -212,9 +219,12 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2Panel3.BorderRadius = 6;
+            this.guna2Panel3.BorderThickness = 2;
             this.guna2Panel3.Controls.Add(this.pictureBox3);
             this.guna2Panel3.Controls.Add(this.guna2Button2);
-            this.guna2Panel3.Location = new System.Drawing.Point(306, 108);
+            this.guna2Panel3.Location = new System.Drawing.Point(306, 104);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(275, 53);
             this.guna2Panel3.TabIndex = 8;
@@ -231,9 +241,12 @@
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2Panel4.BorderRadius = 6;
+            this.guna2Panel4.BorderThickness = 2;
             this.guna2Panel4.Controls.Add(this.pictureBox4);
             this.guna2Panel4.Controls.Add(this.guna2Button4);
-            this.guna2Panel4.Location = new System.Drawing.Point(306, 167);
+            this.guna2Panel4.Location = new System.Drawing.Point(306, 163);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(275, 53);
             this.guna2Panel4.TabIndex = 9;
