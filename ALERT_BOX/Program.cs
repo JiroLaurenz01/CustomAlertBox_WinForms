@@ -16,7 +16,7 @@ namespace ALERT_BOX
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AlertForm());
+            Application.Run(new MainForm());
         }
     }
 }
