@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
+            this.containerControls = new Guna.UI2.WinForms.Guna2ContainerControl();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.removeBtn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,7 +46,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.guna2ContainerControl1.SuspendLayout();
+            this.containerControls.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -61,18 +61,20 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2ContainerControl1
+            // containerControls
             // 
-            this.guna2ContainerControl1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ContainerControl1.Controls.Add(this.guna2ControlBox1);
-            this.guna2ContainerControl1.Controls.Add(this.removeBtn);
-            this.guna2ContainerControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2ContainerControl1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2ContainerControl1.Location = new System.Drawing.Point(0, 0);
-            this.guna2ContainerControl1.Name = "guna2ContainerControl1";
-            this.guna2ContainerControl1.Size = new System.Drawing.Size(595, 31);
-            this.guna2ContainerControl1.TabIndex = 0;
-            this.guna2ContainerControl1.Text = "guna2ContainerControl1";
+            this.containerControls.BackColor = System.Drawing.Color.Transparent;
+            this.containerControls.Controls.Add(this.guna2ControlBox1);
+            this.containerControls.Controls.Add(this.removeBtn);
+            this.containerControls.Dock = System.Windows.Forms.DockStyle.Top;
+            this.containerControls.FillColor = System.Drawing.Color.DimGray;
+            this.containerControls.Location = new System.Drawing.Point(0, 0);
+            this.containerControls.Name = "containerControls";
+            this.containerControls.Size = new System.Drawing.Size(595, 31);
+            this.containerControls.TabIndex = 0;
+            this.containerControls.Text = "guna2ContainerControl1";
+            this.containerControls.MouseDown += new System.Windows.Forms.MouseEventHandler(this.containerControls_MouseDown);
+            this.containerControls.MouseMove += new System.Windows.Forms.MouseEventHandler(this.containerControls_MouseMove);
             // 
             // guna2ControlBox1
             // 
@@ -279,12 +281,12 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.guna2ContainerControl1);
+            this.Controls.Add(this.containerControls);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alert Box";
-            this.guna2ContainerControl1.ResumeLayout(false);
+            this.containerControls.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
@@ -301,7 +303,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ContainerControl guna2ContainerControl1;
+        private Guna.UI2.WinForms.Guna2ContainerControl containerControls;
         private Guna.UI2.WinForms.Guna2ControlBox removeBtn;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
