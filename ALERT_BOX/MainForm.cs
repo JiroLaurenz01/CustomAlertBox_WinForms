@@ -31,7 +31,7 @@ namespace ALERT_BOX
 
         #endregion
 
-        #region FUNCTIONS TO DISPLAY SPECIFIC NOTIFICATION
+        #region FUNCTION TO DISPLAY SPECIFIC NOTIFICATION
 
         private void DisplayNotification_Click(object sender, EventArgs e)
         {
@@ -41,15 +41,19 @@ namespace ALERT_BOX
             switch (button.Name)
             {
                 case "successButton":
+                    // If the "Success" button is clicked, trigger the Alert method with a success notification.
                     Alert("Success Notification", AlertForm.Type.Success);
                     break;
                 case "informationButton":
+                    // If the "Information" button is clicked, trigger the Alert method with an informative notification.
                     Alert("Informative Notification", AlertForm.Type.Info);
                     break;
                 case "warningButton":
+                    // If the "Warning" button is clicked, trigger the Alert method with a warning notification.
                     Alert("Warning Notification", AlertForm.Type.Warning);
                     break;
                 case "errorButton":
+                    // If the "Error" button is clicked, trigger the Alert method with an error notification.
                     Alert("Error Notification", AlertForm.Type.Error);
                     break;
             }
