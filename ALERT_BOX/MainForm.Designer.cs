@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ContainerControl1 = new Guna.UI2.WinForms.Guna2ContainerControl();
-            this.removeBtn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.removeBtn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.informationButton = new Guna.UI2.WinForms.Guna2Button();
+            this.successButton = new Guna.UI2.WinForms.Guna2Button();
+            this.warningButton = new Guna.UI2.WinForms.Guna2Button();
+            this.errorButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -74,17 +74,6 @@
             this.guna2ContainerControl1.TabIndex = 0;
             this.guna2ContainerControl1.Text = "guna2ContainerControl1";
             // 
-            // removeBtn
-            // 
-            this.removeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.removeBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.removeBtn.FillColor = System.Drawing.Color.Transparent;
-            this.removeBtn.IconColor = System.Drawing.Color.White;
-            this.removeBtn.Location = new System.Drawing.Point(556, 0);
-            this.removeBtn.Name = "removeBtn";
-            this.removeBtn.Size = new System.Drawing.Size(39, 31);
-            this.removeBtn.TabIndex = 1;
-            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
@@ -97,6 +86,17 @@
             this.guna2ControlBox1.Size = new System.Drawing.Size(39, 31);
             this.guna2ControlBox1.TabIndex = 2;
             // 
+            // removeBtn
+            // 
+            this.removeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.removeBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.removeBtn.FillColor = System.Drawing.Color.Transparent;
+            this.removeBtn.IconColor = System.Drawing.Color.White;
+            this.removeBtn.Location = new System.Drawing.Point(556, 0);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Size = new System.Drawing.Size(39, 31);
+            this.removeBtn.TabIndex = 1;
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
@@ -108,75 +108,77 @@
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "CUSTOM ALERT BOX";
             // 
-            // guna2Button1
+            // informationButton
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(171)))), ((int)(((byte)(247)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(58, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(214, 47);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "INFORMATIVE MESSAGE";
+            this.informationButton.BackColor = System.Drawing.Color.Transparent;
+            this.informationButton.BorderRadius = 6;
+            this.informationButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.informationButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.informationButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.informationButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.informationButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(171)))), ((int)(((byte)(247)))));
+            this.informationButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informationButton.ForeColor = System.Drawing.Color.White;
+            this.informationButton.Location = new System.Drawing.Point(58, 3);
+            this.informationButton.Name = "informationButton";
+            this.informationButton.Size = new System.Drawing.Size(214, 47);
+            this.informationButton.TabIndex = 2;
+            this.informationButton.Text = "INFORMATIVE MESSAGE";
+            this.informationButton.Click += new System.EventHandler(this.DisplayNotification_Click);
             // 
-            // guna2Button2
+            // successButton
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 6;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(201)))), ((int)(((byte)(112)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(58, 3);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(214, 47);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "SUCCESS MESSAGE";
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.successButton.BackColor = System.Drawing.Color.Transparent;
+            this.successButton.BorderRadius = 6;
+            this.successButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.successButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.successButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.successButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.successButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(201)))), ((int)(((byte)(112)))));
+            this.successButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.successButton.ForeColor = System.Drawing.Color.White;
+            this.successButton.Location = new System.Drawing.Point(58, 3);
+            this.successButton.Name = "successButton";
+            this.successButton.Size = new System.Drawing.Size(214, 47);
+            this.successButton.TabIndex = 3;
+            this.successButton.Text = "SUCCESS MESSAGE";
+            this.successButton.Click += new System.EventHandler(this.DisplayNotification_Click);
             // 
-            // guna2Button3
+            // warningButton
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 6;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(66)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(58, 3);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(214, 47);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "WARNING MESSAGE";
+            this.warningButton.BackColor = System.Drawing.Color.Transparent;
+            this.warningButton.BorderRadius = 6;
+            this.warningButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.warningButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.warningButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.warningButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.warningButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(91)))), ((int)(((byte)(66)))));
+            this.warningButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warningButton.ForeColor = System.Drawing.Color.White;
+            this.warningButton.Location = new System.Drawing.Point(58, 3);
+            this.warningButton.Name = "warningButton";
+            this.warningButton.Size = new System.Drawing.Size(214, 47);
+            this.warningButton.TabIndex = 4;
+            this.warningButton.Text = "WARNING MESSAGE";
+            this.warningButton.Click += new System.EventHandler(this.DisplayNotification_Click);
             // 
-            // guna2Button4
+            // errorButton
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 6;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(35)))), ((int)(((byte)(71)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(58, 3);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(214, 47);
-            this.guna2Button4.TabIndex = 5;
-            this.guna2Button4.Text = "ERROR MESSAGE";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.errorButton.BackColor = System.Drawing.Color.Transparent;
+            this.errorButton.BorderRadius = 6;
+            this.errorButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.errorButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.errorButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.errorButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.errorButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(35)))), ((int)(((byte)(71)))));
+            this.errorButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorButton.ForeColor = System.Drawing.Color.White;
+            this.errorButton.Location = new System.Drawing.Point(58, 3);
+            this.errorButton.Name = "errorButton";
+            this.errorButton.Size = new System.Drawing.Size(214, 47);
+            this.errorButton.TabIndex = 5;
+            this.errorButton.Text = "ERROR MESSAGE";
+            this.errorButton.Click += new System.EventHandler(this.DisplayNotification_Click);
             // 
             // guna2Panel1
             // 
@@ -184,7 +186,7 @@
             this.guna2Panel1.BorderRadius = 6;
             this.guna2Panel1.BorderThickness = 2;
             this.guna2Panel1.Controls.Add(this.pictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.informationButton);
             this.guna2Panel1.Location = new System.Drawing.Point(13, 104);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(275, 53);
@@ -206,7 +208,7 @@
             this.guna2Panel2.BorderRadius = 6;
             this.guna2Panel2.BorderThickness = 2;
             this.guna2Panel2.Controls.Add(this.pictureBox2);
-            this.guna2Panel2.Controls.Add(this.guna2Button3);
+            this.guna2Panel2.Controls.Add(this.warningButton);
             this.guna2Panel2.Location = new System.Drawing.Point(13, 163);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(275, 53);
@@ -228,7 +230,7 @@
             this.guna2Panel3.BorderRadius = 6;
             this.guna2Panel3.BorderThickness = 2;
             this.guna2Panel3.Controls.Add(this.pictureBox3);
-            this.guna2Panel3.Controls.Add(this.guna2Button2);
+            this.guna2Panel3.Controls.Add(this.successButton);
             this.guna2Panel3.Location = new System.Drawing.Point(306, 104);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(275, 53);
@@ -250,7 +252,7 @@
             this.guna2Panel4.BorderRadius = 6;
             this.guna2Panel4.BorderThickness = 2;
             this.guna2Panel4.Controls.Add(this.pictureBox4);
-            this.guna2Panel4.Controls.Add(this.guna2Button4);
+            this.guna2Panel4.Controls.Add(this.errorButton);
             this.guna2Panel4.Location = new System.Drawing.Point(306, 163);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(275, 53);
@@ -303,10 +305,10 @@
         private Guna.UI2.WinForms.Guna2ControlBox removeBtn;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button informationButton;
+        private Guna.UI2.WinForms.Guna2Button errorButton;
+        private Guna.UI2.WinForms.Guna2Button warningButton;
+        private Guna.UI2.WinForms.Guna2Button successButton;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.PictureBox pictureBox3;
